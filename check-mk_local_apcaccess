@@ -1,0 +1,7 @@
+#!/bin/bash
+
+APCACCESS_OUT="`/usr/sbin/apcaccess`"
+
+APCACCESS_LINE="$( echo \"$APCACCESS_OUT\" | tr '\n' ' ' )"
+
+echo "OK \"APCACCESS\" - $APCACCESS_LINE"
